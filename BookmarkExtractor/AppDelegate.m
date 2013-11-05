@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "BookData.h"
+#import "MMBookManager.h"
 
 @interface AppDelegate()
 
@@ -39,6 +40,10 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
 	[_booksTextField becomeFirstResponder];
+    
+    MMBookManager* bookManager = [[MMBookManager alloc] init];
+    [bookManager process];
+    
 }
 
 -(BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
@@ -74,7 +79,7 @@
 
 -(void)setupBooks
 {
-	books = nil;
+    books = nil;
 	booksFound = nil;
 	books = [[NSMutableArray alloc] initWithCapacity:10];
 	booksFound = [[NSMutableDictionary alloc] initWithCapacity:10];

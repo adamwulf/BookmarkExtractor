@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		664769B61828C63900FEA0E8 /* MMBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 664769B51828C63900FEA0E8 /* MMBookManager.m */; };
+		664769B91828C6C100FEA0E8 /* MMBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 664769B81828C6C100FEA0E8 /* MMBook.m */; };
 		89005CC814D4E1A600022686 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89005CC714D4E1A600022686 /* Cocoa.framework */; };
 		89005CD214D4E1A600022686 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89005CD014D4E1A600022686 /* InfoPlist.strings */; };
 		89005CD414D4E1A600022686 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 89005CD314D4E1A600022686 /* main.m */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		664769B41828C63900FEA0E8 /* MMBookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBookManager.h; sourceTree = "<group>"; };
+		664769B51828C63900FEA0E8 /* MMBookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBookManager.m; sourceTree = "<group>"; };
+		664769B71828C6C100FEA0E8 /* MMBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMBook.h; sourceTree = "<group>"; };
+		664769B81828C6C100FEA0E8 /* MMBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMBook.m; sourceTree = "<group>"; };
 		89005CC314D4E1A600022686 /* BookmarkExtractor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookmarkExtractor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89005CC714D4E1A600022686 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		89005CCA14D4E1A600022686 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -49,6 +55,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		664769B31828C62700FEA0E8 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				664769B41828C63900FEA0E8 /* MMBookManager.h */,
+				664769B51828C63900FEA0E8 /* MMBookManager.m */,
+				664769B71828C6C100FEA0E8 /* MMBook.h */,
+				664769B81828C6C100FEA0E8 /* MMBook.m */,
+			);
+			name = Books;
+			sourceTree = "<group>";
+		};
 		89005CB814D4E1A600022686 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +106,7 @@
 		89005CCD14D4E1A600022686 /* BookmarkExtractor */ = {
 			isa = PBXGroup;
 			children = (
+				664769B31828C62700FEA0E8 /* Books */,
 				89005CD914D4E1A600022686 /* AppDelegate.h */,
 				89005CDA14D4E1A600022686 /* AppDelegate.m */,
 				892D962814D4F31F00249288 /* BookData.h */,
@@ -176,8 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				664769B91828C6C100FEA0E8 /* MMBook.m in Sources */,
 				89005CD414D4E1A600022686 /* main.m in Sources */,
 				89005CDB14D4E1A600022686 /* AppDelegate.m in Sources */,
+				664769B61828C63900FEA0E8 /* MMBookManager.m in Sources */,
 				892D962A14D4F31F00249288 /* BookData.m in Sources */,
 				892D965D14DB6E9800249288 /* DndTextField.m in Sources */,
 			);
